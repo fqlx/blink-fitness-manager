@@ -9,4 +9,4 @@ load_dotenv()
 
 blink = Blink(userId=getenv('USERID'), zipCode=getenv('ZIPCODE'))
 blink.login()
-blink.register_next_4_days('15:30:00')
+blink.register_next_3_days('15:30:00')

@@ -12,13 +12,13 @@ blink.print_open_slots(days=0)
 blink.print_open_slots(days=1)
 blink.print_open_slots(days=2)
 
-event_id = input("Enter event id to register or r for next 4 days: ")
+event_id = input("Enter event id to register or r for next 3 days: ")
 
 if event_id == '':
     exit()
 
 elif event_id == 'r':
-    blink.register_next_4_days('15:30:00')
+    blink.register_next_3_days('15:30:00')
     blink.print_reservations()
     exit()
 
