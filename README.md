@@ -1,7 +1,7 @@
 # Blink Fitness
 
 Sick of the reservation bullshit at Blink Fitness?
-I reversed engineered the app to make this util to manage your gym hours.
+I reversed engineered the app to manage your gym hours and automatically schedule your workouts.
 
 - A command line tool to view and edit reversation
 - A cronjob so my gym time is always reserved
