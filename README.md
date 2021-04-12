@@ -15,6 +15,10 @@ Setup:
 To manage gym time:
  - python3 run.py
 
+To setup with tmux:
+ - Create a new tmux session
+ - Run python tmux.py
+
 To setup the cronjob to run everyday:
  - Run "chmod +x cronjob.py" to make the file executable by cron
  - Run "crontab -e" to edit cron jobs

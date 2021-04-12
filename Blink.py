@@ -24,7 +24,7 @@ class Blink:
             'User-Agent': self.SPOOFED_UA,
         }
 
-    def register_next_3_days(self, time: str):
+    def register_next_4_days(self, time: str):
         reservations = list(
             map(
                 lambda reservation: datetime.strptime(
@@ -32,7 +32,7 @@ class Blink:
                     '%Y-%m-%dT%H:%M:%S%z').strftime("%Y-%m-%d"),
                 self._get_reservations()))
 
-        for d in range(0, 3):
+        for d in range(0, 4):
             day = date.today() + timedelta(days=d)
             if str(day) in reservations:
                 print(day, ': Registered')
